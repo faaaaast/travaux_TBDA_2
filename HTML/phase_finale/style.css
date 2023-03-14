@@ -1,0 +1,15 @@
+ul {
+    background-color: black;
+    height: 80px;
+    margin: 20px;
+}
+
+ ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 35px;
+}
+
+ul li a {
+    color: white;
+}
