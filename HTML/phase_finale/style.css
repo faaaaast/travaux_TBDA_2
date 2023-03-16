@@ -13,3 +13,39 @@ ul {
 ul li a {
     color: white;
 }
+.droite{
+    position: relative;
+    padding-left: 4px;
+    margin: 16px 1px;
+    width: 20%;
+    color: gray;
+    border: 1px transparent;
+}
+
+.droite h2 {
+    font-size: 22px;
+}
+
+.droite aside {
+    padding: 11px 11px;
+}
+
+a {
+    color: white;
+}
+
+.gauche {
+    position: relative;
+    max-width: 100%;
+    width: 80%;
+}
+
+.gauche {
+    width: 100%;
+    position: relative;
+}
+
+body {
+    font-size: 1,1rem;
+    font-family: 'Times New Roman';
+}
