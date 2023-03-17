@@ -1,10 +1,16 @@
+/* *{margin:0;
+padding:0;
+} */
+
+
+
 ul {
     background-color: black;
-    height: 80px;
-    margin: 20px;
+    width: 98%;
+    height: 60px;
 }
 
- ul li {
+ul li {
     list-style-type: none;
     display: inline-block;
     padding: 35px;
@@ -13,13 +19,36 @@ ul {
 ul li a {
     color: white;
 }
+
+@media screen and (max-width:768px ) {
+
+    .menu li {
+    display: block;
+}
+.gauche {
+    position: relative;
+    width: 100%;
+}
+.droite{
+    display: none;
+    padding: 0px 10px;
+
+}
+}
+
+.prin{
+ display: flex;   
+ max-width: 100%;
+ margin: 2px 2px;
+}
 .droite{
     position: relative;
-    padding-left: 4px;
-    margin: 16px 1px;
+    padding-right: 1px;
+    margin: 1px 1px;
     width: 20%;
-    color: gray;
+    color: rgb(0, 0, 0);
     border: 1px transparent;
+    background: grey;
 }
 
 .droite h2 {
@@ -27,7 +56,7 @@ ul li a {
 }
 
 .droite aside {
-    padding: 11px 11px;
+    padding: 1px 1px;
 }
 
 a {
@@ -36,16 +65,32 @@ a {
 
 .gauche {
     position: relative;
-    max-width: 100%;
     width: 80%;
 }
 
-.gauche {
-    width: 100%;
-    position: relative;
-}
+
 
 body {
     font-size: 1,1rem;
-    font-family: 'Times New Roman';
+    font-family:'New Roman';
+}
+
+.logo {
+   width: 200px; 
+}
+
+.promo {
+    width: 100%;
+}
+
+.titre {
+    width: 50%;
+    position: relative;
+    padding-top: 1px;
+    font-size: 28px;
+    margin-left: 40%;
+}
+
+.tab {
+    width: 50%;
 }
