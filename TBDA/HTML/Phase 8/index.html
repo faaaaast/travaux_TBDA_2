@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- Debut de la balise head -->
+
+<head>
+
+    <!-- Encodage UTF-8 conçu pour coder l'ensemble des caractères -->
+    <meta charset="UTF-8">
+
+    <!-- Permet d’indiquer comment le navigateur doit afficher la page sur différents appareils -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+
+    <!-- La balise meta-description est très importante en référencement naturel, elle doit être utile, attrayante et persuasive -->
+    <meta name="description" content="Description de mon site" />
+
+    <!-- L'Élément title utile et obligatoire -->
+    <title>Titre de mon onglet</title>
+    <!-- Icone de l'onglet Attention l'extension de l'image doit être en .ico-->
+    <link rel="icon" href="Logo_Afpa.ico" />
+
+    <!-- On relie ensuite nos feuilles de styles CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ajout de la police 'Concert One' depuis https://fonts.google.com/ -->
+    <link href="https://fonts.googleapis.com/css?family=Concert+One&display=swap" rel="stylesheet">
+
+</head>
+<!-- Fin de la balise head -->
+
+<!-- --------------------------------------------------------------------------------------------------------- -->
+<!-- N'oubliez pas de commenter votre code ! Utile pour les petits et les gros projets, en solo ou en équipe ! -->
+<!-- --------------------------------------------------------------------------------------------------------- -->
+
+<!-- Debut de la balise body -->
+
+<body>
+    <!-- --------------------------------------------------------------------------------------------------------- -->
+    <!-- Tout le contenu de votre page web se situera entre votre balise body -->
+    <!-- --------------------------------------------------------------------------------------------------------- -->
+    <h1>Coucou</h1>
+    <!-- Fin de la balise body -->
+    <h1><b>Contact</b></h1> <!--Début du formulaire de contact-->
+    <p><i><small>* Ces zones sont obligatoires</small></i></p>
+    <form action="/ma-page-de-traitement" method="post">
+
+
+        <fieldset>
+            <legend><small>Vos coordonées</small></legend>
+            <div>
+                <label for="name">Votre nom* :</label>
+                <input type="text" id="nom" name="user_name">
+            </div>
+            <div>
+                <label for="name">Votre prénom* :</label>
+                <input type="text" id="prenom" name="user_name">
+            </div>
+            <div>
+                <label for="sexe">Sexe*:</label>
+                <input type="radio" id="Masculin" name="user" value="Masculin">
+                <label for="Masculin"> Masculin </label>
+                <input type="radio" id="Feminin" name="user" value="Féminin">
+                <label for="Feminin">Féminin</label>
+            </div>
+            <div>
+                <label for="mail">Date de naissance*:</label>
+                <input type="date" id="date" name="user_date">
+            </div>
+            <div>
+                <label for="mail">Code postal*:</label>
+                <input type="text" id="text" name="user_text">
+            </div>
+            <div>
+                <label for="mail">Adresse:</label>
+                <input type="text" id="adr" name="user_adr">
+            </div>
+            <div>
+                <label for="mail">Ville:</label>
+                <input type="text" id="ville" name="user_ville">
+            </div>
+            <div>
+                <label for="mail">Email*:</label>
+                <input type="text" id="mail" placeholder="totodutoto@mail.fr" name="user_mail">
+            </div>
+        </fieldset>
+
+
+    </form>
+    <form action="/ma-page-de-traitement" method="post">
+        <fieldset>
+            <legend><small>Votre demande</small></legend>
+            <select id="couleur">
+                <option value="Veuillez sélectioner un sujet" selected>Veuillez sélectionner un sujet</option>
+                <option value="Commande">Mes commandes</option>
+                <option value="Qproduit">Question sur un produit</option>
+                <option value="Reclamation">Réclamation</option>
+                <option value="Autre">Autres</option>
+            </select>
+            <p></p>
+            <div>
+                <label for="msg">Votre question :</label>
+                <textarea id="question" name="user_question"></textarea>
+            </div>
+            <p></p>
+        </fieldset>
+    </form>
+
+    <input type="checkbox" required>
+    <p>* J'accepte le traitement informatique de ce formulaire</p>
+    <input type="submit" value="Envoyer">
+    <input type="submit" value="Annuler">
+</body>
+<!-- Fin du document HTML -->
+
+</html>

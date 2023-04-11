@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let PU = parseFloat(prompt("Saisir le prix unitaire du produit : "));
+let QTECOM = parseInt(prompt("Saisir la quantité commandée : "));
+
+let TOT = PU * QTECOM;
+let REM = 0;
+let PORT = 0;
+
+if (TOT < 100) {
+  REM = 0;
+} else if (TOT < 200) {
+  REM = 0.05;
+} else {
+  REM = 0.1;
+}
+
+let PAP = TOT * (1 - REM);
+
+if (PAP <= 500) {
+  PORT = Math.max(6, PAP * 0.02);
+}
+
+PAP += PORT;
+
+document.write(`Prix à payer : ${PAP.toFixed(2)} €` + "<br>");
+document.write(`Remise : ${REM * 100}%`+ "<br>");
+document.write(`Frais de port : ${PORT.toFixed(2)} €`);
+
+    </script>
+</body>
+</html>

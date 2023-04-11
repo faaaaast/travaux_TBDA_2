@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+let str = prompt("Entrez une chaîne de caractères :");
+let count = 0;
+
+// Boucle pour parcourir tous les caractères de la chaîne
+for (let i = 0; i < str.length; i++) {
+  let char = str.charAt(i);
+
+  // Vérifie si le caractère est une voyelle
+  if (char.match(/[aeiouy]/gi)) {
+    count++;
+  }
+}
+
+// Affiche le nombre de voyelles dans la chaîne
+document.write("Le nombre de voyelles dans la chaîne est : " + count);
+
+
+
+  </script>  
+</body>
+</html>

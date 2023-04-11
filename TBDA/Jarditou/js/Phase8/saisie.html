@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        
+        let prenoms = []; // tableau pour stocker les prénoms saisis
+
+        while (true) {
+            let prenom = window.prompt("Entrez un prénom (laissez le champ vide pour arrêter) :");
+
+            if (prenom === "") {
+                break; // arrêter la boucle si le champ est vide
+            }
+
+            prenoms.push(prenom); // ajouter le prénom saisi au tableau
+        }
+
+        document.write("Nombre de prénoms saisis : " + prenoms.length + "<br>"); // afficher le nombre de prénoms saisis sur la console
+
+        document.write("Prénoms saisis : " + prenoms.join(", ")); // afficher les prénoms saisis sur la console
+
+    </script>
+</body>
+
+</html>

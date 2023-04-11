@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ // Demander à l'utilisateur la taille du tableau
+var taille = prompt("Entrez la taille du tableau:");
+
+// Créer le tableau vide
+var tableau = [];
+
+// Demander à l'utilisateur d'entrer les valeurs du tableau
+for (var i = 0; i < taille; i++) {
+  var valeur = prompt("Entrez la valeur " + (i+1) + " du tableau:");
+  tableau.push(valeur);
+}
+
+// Afficher le tableau final
+document.write(tableau);
+    </script>
+</body>
+</html>

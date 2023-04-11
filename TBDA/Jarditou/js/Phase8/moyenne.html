@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!--var somme=0;
+var saisie="";
+var moyenne=0; 
+while(saisie!="0"){
+  var count=0;
+  saisie=prompt("Entrez votre nombre\n Entrez 0 pour terminer");
+  count ++;
+  moyenne=somme/count;
+}
+prompt("Je suis " + moyenne + somme);-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<label for="input">Entrez des nombres (0 pour arrêter):</label>
+<input type="text" id="input">
+<button onclick="calculate()">Calculer</button>
+<br><br>
+<div id="result"></div>
+
+<script>
+
+function calculate()
+{
+  let input = document.getElementById("input").value;
+  let number = [];
+  let sum = 0;
+  let average = 0;
+  while(input !=0)
+  {
+    number.push(Number(input));
+    input=prompt("Entrez un autre nombre (0 pour arrêter)");
+  }
+  for(let i = 0; i<number.length; i++)
+  {
+    sum+=number[i];
+  }
+  if(number.length > 0)
+  {
+    average=sum/number.length;
+  }
+  document.getElementById("result").innerHTML = "somme : " + sum + "<br> moyenne : " +average ;
+}
+</script>
+</body>
+</html>

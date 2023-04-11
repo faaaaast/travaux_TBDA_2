@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let age, count1 = 0, count2 = 0, count3 = 0;
+        do {
+            age = parseInt(prompt("Entrez un âge :"));
+            if (age < 20) {
+                count1++;
+            } else if (age > 40) {
+                count2++;
+            } else {
+                count3++;
+            }
+        } while (age < 100);
+        document.write("Il y a " + count1 + " personne(s) d'âge strictement inférieur à 20 ans.<br>");
+        document.write("Il y a " + count2 + " personne(s) d'âge strictement supérieur à 40 ans.<br>");
+        document.write("Il y a " + count3 + " personne(s) d'âge compris entre 20 ans et 40 ans (inclus).<br>");
+        document.write("Il y a 1 centenaire.");
+
+    </script>
+</body>
+
+</html>

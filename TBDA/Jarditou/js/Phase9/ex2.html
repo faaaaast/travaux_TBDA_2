@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="str1">str1:</label>
+        <input type="text" id="str1" name="str1"><br>
+      
+        <label for="str2">str2:</label>
+        <input type="text" id="str2" name="str2"><br>
+      
+        <label for="n">n:</label>
+        <input type="text" id="n" name="n"><br>
+      
+        <input type="button" value="Extraire le nième mot" onclick="strtok()">
+      </form>
+      
+   <script> 
+function strtok(str1, str2, n) {
+  var words = str1.split(str2);  // Divise str1 en mots en utilisant le caractère str2 comme séparateur
+  return words[n-1];  // Retourne le nième mot (n-1 car les indices commencent à 0)
+}
+
+
+
+   </script> 
+</body>
+</html>

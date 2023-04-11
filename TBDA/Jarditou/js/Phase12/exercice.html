@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let tableau = [];
+        let nombre = 0;
+        let somme = 0;
+
+        do {
+            nombre = parseFloat(window.prompt("Entrez une valeur numérique (0 pour arrêter la saisie)"));
+            if (nombre !== 0 && !isNaN(nombre)) {
+                tableau.push(nombre);
+                somme += nombre;
+            }
+        } while (nombre !== 0);
+
+        let nombreDeValeurs = tableau.length;
+        let moyenne = somme / nombreDeValeurs;
+
+        document.write("Nombre de valeurs saisies : " + nombreDeValeurs + "<br>");
+        document.write("Somme des valeurs saisies : " + somme + "<br>");
+        document.write("Moyenne des valeurs saisies : " + moyenne + "<br>");
+
+    </script>
+</body>
+
+</html>

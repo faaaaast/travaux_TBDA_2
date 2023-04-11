@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Fonction produit qui retourne le produit de deux variables x et y
+function produit(x, y) {
+  return x * y;
+}
+function cube(z){
+  return z*z*z;
+}
+// Fonction afficheImg qui affiche une image à partir de son chemin
+function afficheImg(image) {
+  // Crée un élément <img> dans le DOM
+  const imgElement = document.createElement("img");
+
+  // Définit l'attribut "src" de l'élément <img> à l'URL de l'image
+  imgElement.src = image;
+
+  // Ajoute l'élément <img> au corps du document
+  document.body.appendChild(imgElement);
+}
+
+// Exemple d'utilisation des fonctions
+const x =window.prompt("Entrez un nombre : ");
+const y =window.prompt("entrez le multiplicateur : ");
+const z =x;
+const produitXY = produit(x, y);
+const cubez =cube(z);
+document.write("<br>"+`Le produit de ${x} et ${y} est ${produitXY}` + "<br>");
+document.write("<br>"+`Le cube de ${z} est ${cubez}` + "<br>");
+const image = "/Jarditou/js/Phase9/img/papillon.jpg";
+afficheImg(image);
+</script>
+</body>
+</html>

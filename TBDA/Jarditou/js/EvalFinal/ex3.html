@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var tab = ["Audrey", "Aurélien", "Flavien", "Jérémy", "Laurent", "Melik", "Nouara", "Salem", "Samuel", "Stéphane"];
+
+// On demande à l'utilisateur de saisir un prénom
+var prenom = prompt("Entrez un prénom à supprimer :");
+
+// On recherche l'indice du prénom dans le tableau
+var index = tab.indexOf(prenom);
+
+// Si le prénom est trouvé, on le supprime en décalant les cases qui le suivent
+if (index !== -1) {
+  for (var i = index; i < tab.length - 1; i++) {
+    tab[i] = tab[i + 1];
+  }
+  tab[tab.length - 1] = " ";
+  alert("Le prénom a été supprimé avec succès !");
+} else {
+  alert("Le prénom n'a pas été trouvé dans le tableau.");
+}
+
+// Affichage du tableau après suppression du prénom
+document.write(tab);
+location.reload();
+    </script>
+</body>
+</html>

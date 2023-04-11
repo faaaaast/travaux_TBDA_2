@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Demander à l'utilisateur de saisir la valeur de X
+        let x = parseInt(prompt("Entrez un nombre entier pour X :"));
+
+        // Demander à l'utilisateur de saisir la valeur de N
+        let n = parseInt(prompt("Entrez un nombre entier pour N :"));
+        let a=0;
+        // Afficher les N premiers multiples de X
+        for (let i = 1; i <= n; i++) {
+            a++;
+            let multiple = x * i;
+            document.write(a + " x " + x + " = " + multiple + "<br>");
+        }
+
+    </script>
+
+</body>
+
+</html>

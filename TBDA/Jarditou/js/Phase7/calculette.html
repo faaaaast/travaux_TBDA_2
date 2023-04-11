@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<title>JavaScript</title>
+</head>
+
+<body>
+    <script>
+        var nb1 = window.prompt("Veuillez marquer un nombre ");
+        nb1 = parseInt(nb1);
+        var nb2 = window.prompt("Veuillez marquer un nombre ");
+        nb2 = parseInt(nb2);
+        var op = window.prompt("saisissez l'opération demandé :" + "\n" + "(1 -> addition,2 -> soustraction, 3 -> multiplication, 4 -> division) ");
+        op =JSON(op);
+        var res;
+        if (op < 1  || op > 4) {
+            alert("Erreur maggle, veuillez choisir entre 1 à 4 (ex: + = addition)");
+            location.reload();
+        }
+        else {
+            if (op == 1) {
+                res= nb1 + nb2;
+                alert("Vous avez effectuer une addition : " + nb1 + "+" + nb2 + "\n" + "le résultat est :" + res);
+                location.reload();
+            }
+            else if (op == 2) {
+                res = nb1 - nb2;
+                alert("Vous avez effectuer une soustraction : " + nb1 + "-" + nb2 + "\n" + "le résultat est :" + res);
+                location.reload();
+            }
+            else if (op == 3) {
+                res = nb1 * nb2;
+                alert("Vous avez effectuer une multiplication : " + nb1 + "*" + nb2 + "\n" + "le résultat est :" + res);
+                location.reload();
+            }
+            else if (op == 4) {
+                if(nb1 == 0 || nb2 == 0)
+                {
+                    alert("Vous ne pouvez pas diviser par 0 !!!!!!!");
+                    location.reload();
+                }else{
+                res = nb1 / nb2;
+                alert("Vous avez effectuer une division : " + nb1 + "/" + nb2 + "\n" + "le résultat est :" + res);
+                location.reload();
+            
+            }
+            }
+        }
+
+    </script>
+</body>
+
+</html>

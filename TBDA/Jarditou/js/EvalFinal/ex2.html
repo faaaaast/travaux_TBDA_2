@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Table de multiplication</title>
+  <style>
+    #resultat {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <label for="nombre">Nombre :</label>
+    <input type="number" id="nombre" name="nombre">
+    <button type="submit">Afficher la table de multiplication</button>
+  </form>
+  <div id="resultat"></div>
+  <script>
+    const form = document.querySelector('form');
+    const resultat = document.querySelector('#resultat');
+    
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const nombre = parseInt(document.querySelector('#nombre').value);
+      if (!isNaN(nombre)) {
+        resultat.innerHTML = '';
+        for (let i = 1; i <= 10; i++) {
+          const produit = i * nombre;
+          const ligne = document.createElement('div');
+          ligne.textContent = `${i} x ${nombre} = ${produit}`;
+          resultat.appendChild(ligne);
+        }
+      }
+    });
+  </script>
+</body>
+</html>
