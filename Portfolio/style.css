@@ -76,7 +76,7 @@ nav ul li .active {
     border-bottom: 3px solid #42b664;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     border-bottom: 2px solid #42b664;
 }
 
@@ -124,7 +124,7 @@ nav ul li a:hover{
 .content {
     margin: 2rem 0;
     padding: 2rem 0;
-}    
+}
 
 .container {
     padding: 20px 5%;
@@ -176,7 +176,7 @@ nav ul li a:hover{
     border-radius: 50%;
 }
 
-.content .headerimg #ps {
+.content .headerimg #discord {
     position: absolute;
     top: 5%;
     left: 22%;
@@ -184,10 +184,10 @@ nav ul li a:hover{
     padding: 20px;
     background-color: #fff;
     border-radius: 20%;
-    animation: updownps 4s infinite;
-}    
+    animation: updowndiscord 4s infinite;
+}
 
-.content .headerimg #ai {
+.content .headerimg #photoshop {
     position: absolute;
     top: 15%;
     left: 72%;
@@ -195,25 +195,25 @@ nav ul li a:hover{
     padding: 20px;
     background-color: #fff;
     border-radius: 20%;
-    animation: updownai 4s infinite;
-}    
+    animation: updownphotoshop 4s infinite;
+}
 
-.content .headerimg #diamond {
-    position: absolute;
-    top: 5%;
-    left: 22%;
-    width: 16%;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 20%;
-    animation: updownps 4s infinite;
-}    
-@keyframes updownps {
-    0%
-    100%{
+@keyframes updowndiscord {
+    0% 100% {
         transform: translate (-1px, -1px);
     }
-    50%{
+
+    50% {
+        transform: translate (-10px, -10px);
+    }
+}
+
+@keyframes updownphotoshop {
+    0% 100% {
+        transform: translate (-1px, -1px);
+    }
+
+    50% {
         transform: translate (-10px, -10px);
     }
 }
