@@ -199,7 +199,7 @@ nav ul li a:hover {
 }
 
 @keyframes updowndiscord {
-    0% 100% {
+    0% ,100% {
         transform: translate (-1px, -1px);
     }
 
@@ -209,7 +209,7 @@ nav ul li a:hover {
 }
 
 @keyframes updownphotoshop {
-    0% 100% {
+    0% ,100% {
         transform: translate (-1px, -1px);
     }
 
